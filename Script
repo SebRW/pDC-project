@@ -41,4 +41,4 @@ output <- topTable(fit2, adjust="BH", coef="diab-aCD3", genelist=y.ave$genes, nu
 write.table(output, file="diab_vs_aCD3.txt", sep="\t", quote=FALSE)
 
 #Output the normalized log2 intensity values to analyze with qlucore
-pDC_qlucore <- write.table(y.ave, file = "df.csv", sep=";")
+pDC_qlucore <- write.table(y.ave, file = "pDC_qlucore.csv", sep=";")
